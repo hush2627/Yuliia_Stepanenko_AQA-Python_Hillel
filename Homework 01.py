@@ -1,7 +1,7 @@
 # task 01 == Виправте синтаксичні помилки
 #print("Hello", end = " ")
 #    print("world!")
-from operator import and_
+
 
 #hw 01:
 print("Hello", end = " ")
@@ -34,9 +34,8 @@ for letter in "Hello world!":
 
 #hw 04:
 apples = 2
-banana = 2*4
-banana_quantity = banana
-print(f" {banana_quantity}")
+banana = apples * 4
+print(banana)
 
 # task 05 == виправте назви змінних
 #1_storona = 1
@@ -56,10 +55,6 @@ storona_4 = 4
 #print()
 
 #hw 06:
-storona_1 = 1
-storona_2 = 2
-storona_3 = 3
-storona_4 = 4
 perimeter = storona_1 + storona_2 + storona_3 + storona_4
 print(perimeter)
 
@@ -76,9 +71,9 @@ print(perimeter)
 """
 #hw 07:
 apples = 4
-pearches = apples + 5
+pears = apples + 5
 plums = apples - 2
-total_trees = apples + pearches + plums
+total_trees = apples + pears + plums
 print("всього дерев посадили в саду:", total_trees)
 
 # task 08
