@@ -1,4 +1,4 @@
-#alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I \don't much care where ——\" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
+#8alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I \don't much care where ——\" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
 # task 01 == Розділіть змінну alice_in_wonderland так, щоб вона займала декілька фізичних лінії
 # task 02 == Знайдіть та відобразіть всі символи одинарної лапки (') у тексті
 # task 03 == Виведіть змінну alice_in_wonderland на друк
@@ -35,7 +35,8 @@ print("alice_in_wonderland :\n", alice_in_wonderland)
 
 s_of_black_sea_in_km2 = 436402
 s_of_azov_sea_in_km2 = 37800
-s_of_both_seas: int = (s_of_black_sea_in_km2+s_of_azov_sea_in_km2) 
+s_of_both_seas: int = (s_of_black_sea_in_km2+s_of_azov_sea_in_km2)
+
 print("Яку площу займають Чорне та Азовське моря разом: ",s_of_both_seas)
 
 # task 05
