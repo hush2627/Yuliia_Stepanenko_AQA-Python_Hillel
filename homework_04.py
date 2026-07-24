@@ -33,46 +33,59 @@ print(adventures_of_tom_sawer)
 adventures_of_tom_sawer.replace("....", " ")
 print(adventures_of_tom_sawer)
 
+
 # task 03 ==
 """ Зробіть так, щоб у тексті було не більше одного пробілу між словами.
 """
-adventures_of_tom_sawer.count("  ")
-##adventures_of_tom_sawer.replace("", " ")
-
+adventures_of_tom_sawer.replace("  ", " ")
+print(adventures_of_tom_sawer)
 
 # task 04
 """ Виведіть, скількі разів у тексті зустрічається літера "h"
 """
-adventures_of_tom_sawer.count("h")
-print('скількі разів у тексті зустрічається літера "h", adventures_of_tom_sawer)')
+h_quantity=adventures_of_tom_sawer.count("h")
+print('скількі разів у тексті зустрічається літера "h":' ,h_quantity)
 
 # task 05
 """ Виведіть, скільки слів у тексті починається з Великої літери?
 """
+#upper_case = adventures_of_tom_sawer.split()
+#if letter in upper_case.isupper():
+ #   print(adventures_of_tom_sawer.upper())
 
-
-# task 06
+## task 06
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
 """
-
+tom_first =adventures_of_tom_sawer.find("Tom")
+tom_second =adventures_of_tom_sawer.find("Tom", tom_first+1)
+print("позиція, на якій слово Tom зустрічається вдруге:", tom_second)
 
 # task 07
 """ Розділіть змінну adwentures_of_tom_sawer по кінцю речення.
 Збережіть результат у змінній adwentures_of_tom_sawer_sentences
 """
-adwentures_of_tom_sawer_sentences = None
+adventures_of_tom_sawer_sentences = adventures_of_tom_sawer.split(".")
+print(adventures_of_tom_sawer_sentences)
 
 # task 08
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
 Перетворіть рядок у нижній регістр.
 """
-
+sentence_four = adventures_of_tom_sawer_sentences [3].lower()
+print(sentence_four)
 
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
+##if adventures_of_tom_sawer_sentences.startswith("By the time"):
+   # print("речення починається з 'By the time'")
+#else:
+   # print ("речення не починається з 'By the time'")
 
 
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
+last_sentence = adventures_of_tom_sawer_sentences[-1]
+words_quantity = len(last_sentence.split())
+print(words_quantity)
