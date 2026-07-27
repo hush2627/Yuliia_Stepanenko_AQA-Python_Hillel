@@ -24,20 +24,21 @@ rolling in wealth."""
 """ Дані у строці adwentures_of_tom_sawer розбиті випадковим чином, через помилку.
 треба замінити кінець абзацу на пробіл .replace("\n", " ")"""
 
-adventures_of_tom_sawer.replace("\n", " ")
+adventures_of_tom_sawer = adventures_of_tom_sawer.replace("\n"," ")
 print(adventures_of_tom_sawer)
+
 
 # task 02 ==
 """ Замініть .... на пробіл
 """
-adventures_of_tom_sawer.replace("....", " ")
+adventures_of_tom_sawer = adventures_of_tom_sawer.replace("...."," ")
 print(adventures_of_tom_sawer)
 
 
 # task 03 ==
 """ Зробіть так, щоб у тексті було не більше одного пробілу між словами.
 """
-adventures_of_tom_sawer.replace("  ", " ")
+adventures_of_tom_sawer = " ".join(adventures_of_tom_sawer.split())
 print(adventures_of_tom_sawer)
 
 # task 04
@@ -49,9 +50,12 @@ print('скількі разів у тексті зустрічається лі
 # task 05
 """ Виведіть, скільки слів у тексті починається з Великої літери?
 """
-#upper_case = adventures_of_tom_sawer.split()
-#if letter in upper_case.isupper():
- #   print(adventures_of_tom_sawer.upper())
+words = adventures_of_tom_sawer.split()
+upper_words_quantity = 0
+for word in words:
+    if word[0].isupper():
+        upper_words_quantity += 1
+print("Кількість слів, що починаються з великої літери:", upper_words_quantity)
 
 ## task 06
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
@@ -77,15 +81,16 @@ print(sentence_four)
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
-##if adventures_of_tom_sawer_sentences.startswith("By the time"):
-   # print("речення починається з 'By the time'")
-#else:
-   # print ("речення не починається з 'By the time'")
-
+for sentence in adventures_of_tom_sawer_sentences:
+    if sentence.strip().startswith("By the time"):
+        print("Є речення, яке починається з 'By the time'")
+        break
+else:
+    print("Немає речення, яке починається з 'By the time'")
 
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
-last_sentence = adventures_of_tom_sawer_sentences[-1]
+last_sentence = adventures_of_tom_sawer_sentences[-2]
 words_quantity = len(last_sentence.split())
 print(words_quantity)
