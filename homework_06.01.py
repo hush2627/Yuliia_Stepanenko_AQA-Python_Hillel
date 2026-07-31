@@ -2,6 +2,5 @@
 #Якщо їх більше 10 - вивести в консоль True, інакше - False.
 #Строку отримати за допомогою функції input()
 
-text = input()
-
+text = input("Input your text here")
 print(len(set(text)) > 10)
