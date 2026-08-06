@@ -13,7 +13,7 @@ def multiplication_table(number):
         # десь тут помила, а може не одна
         if  result > 25:
             # Enter the action to take if the result is greater than 25
-            pass
+            break
         print(str(number) + "x" + str(multiplier) + "=" + str(result))
 
         # Increment the appropriate variable
